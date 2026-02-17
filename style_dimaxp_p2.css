@@ -1,0 +1,151 @@
+/*Каркас сайта*/
+@keyframes top-menu {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes content {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
+}
+body {padding:0px; margin:0; background:lch(0% 0 0); font-size:14px; font-family:Arial, Sans-serif;}
+#basic {width:1100px; min-height:100px; margin:0 auto; padding:20px 20px 20px 20px; background: #0a0a0a;}
+img {border:0;}
+a {color:#ff9c00;}
+a:hover {text-decoration:none;}
+
+/*Шапка сайта*/
+li.none-bg {background:none!important; }
+
+/*Верхнее меню сайта*/
+#top-menu { width:960px; height:84px 0 0 0; } 
+.bg-1 {border-radius: 16px; border: 20px; 
+outline-offset: 8px;  box-shadow:0 #1a1a1a; background:#1a1a1a; filter: blur(0px);
+ width:1089px; height:60px;  background:#1a1a1a url();  padding:0 0 0 10px;}
+.bg-2 {width:980px; height:7px; margin:0 auto;} 
+.bg-1 ul {margin:0; padding:8px 0px 0px 10px; list-style:none;}
+.bg-1 ul li {float:left; background: #1a1a1a; padding:0px 10px 0px 0px;}
+.bg-1 ul li a {display:block; height:15px; padding:14px 24px 15px 24px; color:#c9c9c9; 
+	text-decoration:none; text-transform:uppercase;}
+.bg-1 ul li a:hover {border-radius: 9px; border: 20px; 
+outline-offset: 0px; box-shadow: 0px 0px 0px 6px #0f0e0e;  color:#ffffff; background:#0f0e0e; 
+animation: top-menu 20ms ease-in 0s 1 normal forwards;} /*кнопки
+
+
+/* Кнопка (Зеленая)*/
+.button {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color:  #03661e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none; /* Если нужно убрать рамку */
+}
+
+/* Эффект при наведении */
+.button:hover {
+  background-color: #09922b;
+}
+
+/* Кнопка (Голубая) */
+.button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:   #014fa3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none; /* Если нужно убрать рамку */
+}
+
+/* Эффект при наведении */
+.button2:hover {
+  background-color: #016de0;
+}
+
+/* Кнопка (Оранжевая) */
+.button3 {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #df8600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none; /* Если нужно убрать рамку */
+}
+
+/* Эффект при наведении */
+.button3:hover {
+  background-color:   #ff9c00;
+}
+
+/* Кнопка (Красная) */
+.button4 {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #b00303  ;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none; /* Если нужно убрать рамку */
+}
+
+/* Эффект при наведении */
+.button4:hover {
+  background-color: #b40202;
+}
+
+/*Контент*/
+
+#content {width:980px; padding:15px 0px 0 0; background-color: hsl(0, 0%, 4%);}
+.right {color:#ffffff; float:right; width:680px; padding:0px 0 0 20px; text-align:justify;}
+.right h1 {text-transform:uppercase; color:#fff; font-weight:normal; margin-top:0;}
+.left {width:250px; float:left;}
+
+/* Левое меню */
+
+.left ul {border-radius: 16px; background:#1a1a1a;
+outline-offset: 0px; box-shadow: 0px 0px 0px 0px #1a1a1a; margin: 0px; 
+padding:12px 0px 12px 14px; box-sizing: border-box; width: 275px; 
+background-clip: padding-box; list-style:none;}
+.left ul li a {display:block; width:240px; color:#c0c0c0; 
+	text-decoration:none; padding:10px 5px 10px 10px; box-sizing: border-box;}
+.left ul li a:hover {border-radius: 7px; border: 0px;
+outline-offset: 0px; box-shadow: 10px 0px 0px 10px #1d1c1c; 
+background:#0f0e0e url() no-repeat 15px 8px; color:#ffffff; 
+animation: content 20ms ease-in 0s 1 normal forwards;}
+li.none-bg {background:none!important;}
+
+
+
+/*Подвал*/
+
+.myclr {clear:both; float:none; width:100%; height:1px;}
+#podval {width:1100px; text-transform:uppercase; color:#ffffff;  margin-top:50px; border-radius: 4px; box-shadow: 0 0 0 4px #1a1a1a;}
+.yellow {width:1100px; height:3px; margin:0 auto; background:#1a1a1a;}
+.p1 {float:left; width:300px; padding:15px 0 0 0;}
+.p2 {float:right; width:200px; text-align:right; padding:15px 20px 0 0;}
+.p3 {float:right; width:3px; padding:15px 0 0 0;}
