@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
 <html>
-<link rel="icon" href="./favicon.ico">
+<link rel="icon" href="./images/favicon.ico">
 <head>
-    <meta http-equiv="refresh" content="5; url=http://dimaxp.sytes.net/index.html">
+    
 <body style="background-color: #000000;">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Зеркало - Сайт DIMA XP</title>
@@ -40,12 +40,42 @@
             <center>
                 <h1 style="color: rgb(255, 255, 255);">Пожалуйста, подождите...</h1>
                 <br>
-                <h2 style="color: rgb(209, 209, 209);">Через 5 секунд вы перейдёте на сайт DIMA XP</h2>
+                 <h2 id="text" style="color: rgb(209, 209, 209);" id=“textid”>Через 5 секунд вы перейдёте на сайт DIMA XP</h2>
                 <br>
                 <br>
             <p>
             <a href="http://dimaxp.sytes.net/index.html" class="button">ПЕРЕЙТИ СЕЙЧАС</a>
             </p>
+            
+            
+<script>
+var g_pText = document.getElementById("text");
+var g_sAnimation = [".  ",".. ","..."];
+var g_iSeconds = 5;
+var g_iAnimationFrames = 0;
+function run(){
+    document.location.href = "http://dimaxp.sytes.net/index.html";
+}
+function timer(){
+
+    var g_TimerSeconds = setInterval(function(){
+    g_iSeconds -= 1;
+    g_iAnimationFrames++;
+    if(g_iAnimationFrames > 2){
+        g_iAnimationFrames = 0;
+    }
+     g_pText.innerHTML = "Через "+g_iSeconds+" секунд вы перейдёте на сайт DIMA XP"+g_sAnimation[g_iAnimationFrames];
+    console.log(g_iSeconds,g_iAnimationFrames);
+    if(g_iSeconds <= 0){
+        g_iSeconds = 0;
+        run();
+        clearInterval(g_TimerSeconds);
+    }
+    
+    },1000);
+}
+  timer();
+</script>
                 <br>
                 <br>
                 <br>
@@ -61,6 +91,8 @@
                 <br>
                 <br>
                 <br>
+                
+
             </div>
                
              
@@ -72,6 +104,9 @@
             <div class="yellow"></div>
 		
             <div class="p1">©DIMA XP 2016-2026
+                <br>
+                <br>
+                Таймер написал <a href="http://dimaxp.sytes.net/index.html">HCPP</a>
             </div>
             
              
@@ -86,4 +121,3 @@
     </div>
 </body>
 </html>
-
